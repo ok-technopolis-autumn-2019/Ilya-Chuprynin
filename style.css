@@ -1,0 +1,55 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: whitesmoke;
+}
+
+li {
+	list-style: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+.content {
+	margin-left: 30%;
+	margin-right: 30%;
+	background: white;
+}
+
+input {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.picker ul{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.botOfContent {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.botOfContent div{
+	display: flex;
+	justify-content: space-between;
+}
+
+.botOfContent p{
+	padding: 0px 9px 0px 9px;
+	margin: 0;
+}
+
+.active {
+	border: 1px solid whitesmoke;
+	border-radius: 10px;
+	padding: 3px;
+}
