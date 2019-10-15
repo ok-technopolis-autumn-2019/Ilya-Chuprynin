@@ -66,6 +66,11 @@ button {
    background-color: darkgray;
 }
 
+.deleteElem:hover {
+	background-color: indianred;
+	transition: all 0.4s ease;
+}
+
 
 .botOfContent {
 	display: flex;
