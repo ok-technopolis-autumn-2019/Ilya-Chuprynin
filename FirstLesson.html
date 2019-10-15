@@ -10,21 +10,40 @@
 		<div class="picker">
 			<ul>
 				<li><input type="text" name="input" placeholder="What needs to be done?" class="search"></li>
-				<li><input type="radio" name="html">HTML</li>
-				<li><input type="radio" name="html">CSS</li>
-				<li><input type="radio" name="html">JS</li>
-				<li><input type="radio" name="html">JStools</li>
-				<li></li>
+				<li class="checkers">
+					<div class="elements">
+						<p><input type="checkbox" name="html">CSS</p>
+						<button>X</button>
+					</div>
+				</li>
+				<li class="checkers">
+					<div class="elements">
+						<p><input type="checkbox" name="html">HTML</p>
+						<button>X</button>
+					</div>
+				</li>
+				<li class="checkers">
+					<div class="elements">
+						<p><input type="checkbox" name="html">JS</p>
+						<button>X</button>
+					</div>
+				</li>
+				<li class="checkers">
+					<div class="elements">
+						<p><input type="checkbox" name="html">JStools</p>
+						<button>X</button>
+					</div>
+				</li>
 			</ul>
 		</div>
 		<div class="botOfContent">
-			<p>3 items left</p>
+			<button>3 items left</button>
 			<div>
-				<p class="active">All</p>
-				<p>Active</p>
-				<p>Complited</p>
+				<input type="radio" name="bottom" class="active">All</input>
+				<input type="radio" name="bottom">Active</input>
+				<input type="radio" name="bottom">Complited</input>
 			</div>
-			<p>Clear complited</p>
+			<button>Clear complited</button>
 		</div>
 	</div>
 </body>
