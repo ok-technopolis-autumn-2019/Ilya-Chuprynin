@@ -9,22 +9,43 @@
 	<div class="content">
 		<div class="picker">
 			<ul>
-				<li><input type="text" name="input" placeholder="What needs to be done?" class="search"></li>
-				<li><input type="radio" name="html">HTML</li>
-				<li><input type="radio" name="html">CSS</li>
-				<li><input type="radio" name="html">JS</li>
-				<li><input type="radio" name="html">JStools</li>
-				<li></li>
+				<li class="elements border">
+					<button class="setCheckedAll"><img src="icons/Frame1.svg" style="width: 28px; height: 16px;"></button>
+					<input type="text" name="input" placeholder="What needs to be done?" class="search"></li>
+				<li class="checkers border">
+					<div class="elements checkbox">
+						<p><input type="checkbox" name="html">CSS</p>
+						<button class="deleteElem"><img src="icons/Frame3.svg"></button>
+					</div>
+				</li>
+				<li class="checkers border">
+					<div class="elements checkbox">
+						<p><input type="checkbox" name="html">HTML</p>
+						<button class="deleteElem"><img src="icons/Frame3.svg"></button>
+					</div>
+				</li>
+				<li class="checkers border">
+					<div class="elements checkbox">
+						<p><input type="checkbox" name="html">JS</p>
+						<button class="deleteElem"><img src="icons/Frame3.svg"></button>
+					</div>
+				</li>
+				<li class="checkers border">
+					<div class="elements checkbox">
+						<p><input type="checkbox" name="html">JStools</p>
+						<button class="deleteElem"><img src="icons/Frame3.svg"></button>
+					</div>
+				</li>
 			</ul>
 		</div>
-		<div class="botOfContent">
-			<p>3 items left</p>
+		<div class="botOfContent border">
+			<button class="botOfContent-helpButton">3 items left</button>
 			<div>
-				<p class="active">All</p>
-				<p>Active</p>
-				<p>Complited</p>
+				<button class="botOfContent-controlButton active">All</button>
+				<button class="botOfContent-controlButton ">Active</button>
+				<button class="botOfContent-controlButton ">Complited</button>
 			</div>
-			<p>Clear complited</p>
+			<button class="botOfContent-helpButton">Clear complited</button>
 		</div>
 	</div>
 </body>

@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700&subset=cyrillic');
+
 body {
 	margin: 0;
 	padding: 0;
-	background: whitesmoke;
+	background: #F2F2F2;
+	font-family: 'Roboto', 'Arial', 'sans-serif';
+	color: #888888;
 }
 
 li {
@@ -10,19 +14,47 @@ li {
 
 h1 {
 	text-align: center;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 100px;
+	line-height: 21px;
+	/* identical to box height, or 21% */
+
+	letter-spacing: -2.5px;
+
+	color: #CCCCCC;
 }
 
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
 .content {
+	display: flex;
+	flex-direction: column;
 	margin-left: 30%;
-	margin-right: 30%;
+  margin-right: 30%;
 	background: white;
+	min-width: fit-content;
+	box-shadow: 28px 19px 1px rgba(0,0,0,0.2);
+}
+
+.setCheckedAll{
+	padding: 0 10px;
 }
 
 .search {
+	max-width: -webkit-fill-available;
 	width: 100%;
 	border: 0;
 	margin: 0;
-	padding: 0;
+	padding: 20px;
 }
 
 .picker ul{
@@ -30,26 +62,157 @@ h1 {
 	padding: 0;
 }
 
+.elements{
+	display: flex;
+	justify-content: space-between;
+	vertical-align: baseline;
+}
+
+
+
+.elements_text{
+	font-size: 50px;
+}
+
+
+/*Раздел стилизации Чекбоксов*/
+
+.checkbox {
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox p > span {
+    color: #34495E;
+    padding: 0.5rem 0.25rem;
+}
+
+.checkbox p > input {
+    height: 25px;
+    width: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid #E6E6E6;
+    border-radius: 360px;
+    outline: none;
+    transition-duration: 0.3s;
+    background-color: #FFFFFF;
+    cursor: pointer;
+  }
+
+.checkbox p > input:checked {
+    border: 1px solid #41B883;
+    background-color: #34495E;
+}
+
+.checkbox p > input:checked {
+    content: '\2713';
+    text-align: center;
+    color: #41B883;
+}
+
+.checkbox p > input:active {
+    border: 2px solid #34495E;
+}
+
+/*Конец раздела*/
+
+.checkers {
+	padding: 3px 20px 3px 20px;
+}
+
+.checkers:hover .deleteElem{
+	transition: all 0.9s ease;
+	display: block;
+	background: #FAFAFA;
+}
+
+.checkers:hover {
+	background: #FAFAFA;
+	transition: all 0.4s ease;
+}
+
+.border {
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.deleteElem {
+	display: none;
+}
+
+.deleteElem:hover {
+	background: indianred;
+}
 
 
 .botOfContent {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+	font-size: 14px;
+	padding: 20px 10px;
+	max-width: -webkit-fill-available;
+
+    height: 9px;
+    padding-bottom: 17px;
+    padding-top: 7px;
+
 }
 
 .botOfContent div{
 	display: flex;
 	justify-content: space-between;
+	height: fit-content;
 }
 
-.botOfContent p{
-	padding: 0px 9px 0px 9px;
-	margin: 0;
+.botOfContent-helpButton{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 21px;
+	/* identical to box height, or 150% */
+
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.35px;
+}
+
+.bottom {
+	display: none;
+}
+
+.botOfContent-controlButton {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 21px;
+	/* identical to box height, or 150% */
+
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.35px;
+	padding: 0 5px;
 }
 
 .active {
-	border: 1px solid whitesmoke;
-	border-radius: 10px;
-	padding: 3px;
+	background: #FFFFFF;
+	border: 1px solid #EBDFDF;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .content {
+  	margin-left: 0;
+  	margin-right: 0; 
+  }  
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .content {
+  	margin-left: 0;
+  	margin-right: 0; 
+  }  
 }
