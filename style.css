@@ -18,11 +18,10 @@ h1 {
 	font-weight: 100;
 	font-size: 100px;
 	line-height: 21px;
-	/* identical to box height, or 21% */
-
 	letter-spacing: -2.5px;
-
 	color: #CCCCCC;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 button {
@@ -46,18 +45,35 @@ p {
   margin-right: 30%;
 	background: white;
 	min-width: fit-content;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+/*  Не знаю почему, но псевдоэлементы не работают :((((
+.content:before {
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.content:after {
+	margin: 40px;
+	background: 40px;
+}
+*/
 .setCheckedAll{
 	padding: 0 10px;
 }
 
 .search {
+	font-weight: 300;
+	font-style: italic;
+	color: #CCCCCC;
 	max-width: -webkit-fill-available;
 	width: 100%;
 	border: 0;
 	margin: 0;
 	padding: 20px;
+}
+
+.search:placeholder {
+	color: #CCCCCC;
 }
 
 .picker ul{
@@ -71,12 +87,9 @@ p {
 	vertical-align: baseline;
 }
 
-
-
 .elements_text{
 	font-size: 50px;
 }
-
 
 /*Раздел стилизации Чекбоксов*/
 
@@ -93,6 +106,7 @@ p {
 .checkbox div > input {
     height: 25px;
     width: 25px;
+    min-width: 25px;
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
@@ -120,22 +134,28 @@ p {
 /*Конец раздела*/
 
 .checkers {
-	padding: 15px;
+	padding: 10px;
 }
 
 .checkers-input-txt{
 	display: flex;
 }
 
-.checkers-input-txt p{
-	padding-top: 6.5px;
+.checkers-input-txt label{
+	padding-top: 4px;
+	font-weight: 300;
+	font-size: 20px;
+	word-break: break-word;
 	margin-left: 3px;
+	max-width: -webkit-fill-available;
 }
 
 .checkers:hover .deleteElem{
 	transition: all 0.9s ease;
 	display: block;
 	background: #FAFAFA;
+	
+
 }
 
 .checkers:hover {
@@ -149,10 +169,10 @@ p {
 
 .deleteElem {
 	display: none;
-}
-
-.deleteElem:hover {
-	background: indianred;
+	position: absolute;
+  z-index: 100;
+  left: 95%;
+  top: 20%;
 }
 
 
@@ -177,7 +197,6 @@ p {
 }
 
 .botOfContent-helpButton{
-	font-family: Roboto;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 14px;
@@ -193,8 +212,27 @@ p {
 	display: none;
 }
 
+.bottom-border-1{
+	margin-left: 30.3%;
+  margin-right: 30.3%;
+	background: white;
+	min-width: fit-content;
+	height: 2px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-border-2{
+	margin-left: 30.6%;
+  margin-right: 30.6%;
+	background: white;
+	min-width: fit-content;
+	height: 2px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .botOfContent-controlButton {
-	font-family: Roboto;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 14px;
