@@ -119,6 +119,10 @@ p {
     cursor: pointer;
   }
 
+  .checkbox div > input:hover {
+    border: 3px solid #E6E6E6;
+  }
+
 .checkbox div > input:checked {
     border: 1px solid #41B883;
     background: url(icons/Frame2.svg)no-repeat;
@@ -127,8 +131,8 @@ p {
 }
 
 
-.checkbox div > input:active {
-    border: 2px solid #34495E;
+.checkbox div > input:focus {
+    border: 3px solid #41B883;
 }
 
 /*Конец раздела*/
