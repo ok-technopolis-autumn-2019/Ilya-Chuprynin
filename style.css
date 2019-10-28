@@ -90,7 +90,7 @@ ul{
 	display: flex;
 }
 .todo-app__main-controls_checkAll{
-	padding: 0 10px;
+	padding: 10px 10px 0;
 	height: 64px;
   width: 56px;
 }
