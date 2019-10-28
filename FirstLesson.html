@@ -5,50 +5,53 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>todos</h1>
-	<div class="content">
-		<div class="picker">
-			<ul>
-				<li class="elements border">
-					<button class="setCheckedAll"><img src="icons/Frame1.svg" style="width: 28px; height: 16px;"></button>
-					<input type="text" name="input" placeholder="What needs to be done?" class="search"></li>
-				<li class="checkers border">
-					<div class="elements checkbox">
-						<div class="checkers-input-txt"><input type="checkbox" name="html"><label>CSS</label></div>
-						<button class="deleteElem"><img src="icons/Frame3.svg"></button>
-					</div>
-				</li>
-				<li class="checkers border">
-					<div class="elements checkbox">
-						<div class="checkers-input-txt"><input type="checkbox" name="html"><label>HTML</label></div>
-						<button class="deleteElem"><img src="icons/Frame3.svg"></button>
-					</div>
-				</li>
-				<li class="checkers border">
-					<div class="elements checkbox">
-						<div class="checkers-input-txt"><input type="checkbox" name="html"><label>JS</label></div>
-						<button class="deleteElem"><img src="icons/Frame3.svg"></button>
-					</div>
-				</li>
-				<li class="checkers border">
-					<div class="elements checkbox">
-						<div class="checkers-input-txt"><input type="checkbox" name="html"><label>JStools</label></div>
-						<button class="deleteElem"><img src="icons/Frame3.svg"></button>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div class="botOfContent border">
-			<button class="botOfContent-helpButton">3 items left</button>
-			<div>
-				<button class="botOfContent-controlButton active">All</button>
-				<button class="botOfContent-controlButton ">Active</button>
-				<button class="botOfContent-controlButton ">Complited</button>
-			</div>
-			<button class="botOfContent-helpButton">Clear complited</button>
-		</div>
+	<div class="todo-app">
+		<header class="todo-app_header">
+			<h1 class="title">todos</h1>
+		</header>
+		<main class="todo-app__content">
+			<section class="todo-app__main-controls">
+				<button class="todo-app__main-controls_checkAll" title="Select all tasks"><img src="icons/Frame1.svg"></button>
+				<input type="text" name="input" placeholder="What needs to be done?" aria-label="Add new item" class="todo-app__main-controls_add-new" autofocus></li>
+			</section>
+			<section class="todo-app__tasks">
+				<ul>
+					<li class="todo-app__tasks-item border checkbox">
+						<div class="todo-app__tasks-item__input-txt"><input type="checkbox" name="html">
+							<label>HTML</label>
+						</div>
+						<button class="todo-app__tasks-item__deleteElem"><img src="icons/Frame3.svg"></button>
+					</li>
+					<li class="todo-app__tasks-item border checkbox">
+						<div class="todo-app__tasks-item__input-txt"><input type="checkbox" checked="checked" name="html">
+							<label>CSS</label>
+						</div>
+						<button class="todo-app__tasks-item__deleteElem"><img src="icons/Frame3.svg"></button>
+					</li>
+					<li class="todo-app__tasks-item border checkbox">
+						<div class="todo-app__tasks-item__input-txt"><input type="checkbox" name="html">
+							<label>JS</label>
+						</div>
+						<button class="todo-app__tasks-item__deleteElem"><img src="icons/Frame3.svg"></button>
+					</li>
+					<li class="todo-app__tasks-item border checkbox">
+						<div class="todo-app__tasks-item__input-txt"><input type="checkbox" name="html">
+							<label>JStools</label>
+						</div>
+						<button class="todo-app__tasks-item__deleteElem"><img src="icons/Frame3.svg"></button>
+					</li>
+				</ul>
+			</section>
+			<section class="todo-app__actions-bar">
+				<button class="todo-app__actions-helpButton">3 items left</button>
+				<div>
+					<button class="todo-app__actions-controlButton active">All</button>
+					<button class="todo-app__actions-controlButton ">Active</button>
+					<button class="todo-app__actions-controlButton ">Complited</button>
+				</div>
+				<button class="todo-app__actions-helpButton">Clear complited</button>
+			</section>
+		</main>
 	</div>
-	<div class="bottom-border-1"></div>
-	<div class="bottom-border-2"></div>
 </body>
 </html>
