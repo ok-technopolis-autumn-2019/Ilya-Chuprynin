@@ -1,0 +1,27 @@
+@import "_vars";
+
+.todo-app__main-controls {
+	display: flex;
+}
+.todo-app__main-controls_checkAll {
+	padding: 10px 10px 0;
+	height: 64px;
+	width: 56px;
+}
+.todo-app__main-controls_add-new {
+	font-weight: 100;
+	max-width: -webkit-fill-available;
+	width: 100%;
+	border: 0;
+	margin: 0;
+	height: 64px;
+	padding: 4px 4px 0 4px;
+	box-sizing: border-box;
+	font-size: 24px;
+	font-family: @font_family_2;
+	&::placeholder {
+		color: @color_3;
+		font-style: italic;
+		font-weight: 100;
+	}
+}

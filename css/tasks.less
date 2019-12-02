@@ -1,0 +1,42 @@
+@import "_vars";
+
+.todo-app__tasks {
+	min-height: 296px;
+	border-bottom: 1px solid #E6E6E6;
+	border-top: 1px solid #E6E6E6;
+}
+.todo-app__tasks-item {
+	display: flex;
+	min-height: 59px;
+	align-items: center;
+	justify-content: space-between;
+	&:hover {
+		.todo-app__tasks-item__deleteElem {
+			transition: all 0.9s ease;
+			display: block;
+			visibility: visible;
+		}
+		background: #FAFAFA;
+		transition: all 0.4s ease;
+	}
+}
+.todo-app__tasks-item__input-txt {
+	display: flex;
+	align-items: center;
+	label {
+		padding-top: 4px;
+		font-weight: 300;
+		font-size: 24px;
+		word-break: break-word;
+		margin-left: 3px;
+		max-width: -webkit-fill-available;
+	}
+}
+
+.todo-app__tasks-item__deleteElem {
+	display: block;
+	visibility: hidden;
+	margin-right: 5px;
+	width: 36px;
+	height: 36px;
+}
