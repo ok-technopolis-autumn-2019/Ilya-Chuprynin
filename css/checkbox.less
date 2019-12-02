@@ -1,0 +1,51 @@
+@import "_vars";
+
+.checkbox {
+	cursor: pointer;
+	position: relative;
+	div {
+		>span {
+			color: @color_4;
+			padding: 0.5rem 0.25rem;
+		}
+		>input {
+			width: 36px;
+			height: 36px;
+			min-width: 36px;
+			margin: 0 8px 0 12px;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			-o-appearance: none;
+			appearance: none;
+			border: 1px solid #E6E6E6;
+			border-radius: 360px;
+			outline: none;
+			transition-duration: 0.3s;
+			background-color: @background_color_2;
+			cursor: pointer;
+			&:hover {
+				border: 3px solid #E6E6E6;
+			}
+			&:checked {
+				border: 1px solid #41B883;
+				background: url(../icons/Frame2.svg)no-repeat;
+				background-size: 17px;
+				background-position: center;
+				&+label {
+					color: @color_5;
+					text-decoration: line-through;
+				}
+			}
+			&:focus {
+				border: 3px solid #41B883;
+			}
+		}
+	}
+	&:focus-within {
+		>.todo-app__tasks-item__deleteElem {
+			transition: all 0.9s ease;
+			display: block;
+			visibility: visible;
+		}
+	}
+}
